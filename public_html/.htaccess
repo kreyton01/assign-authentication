@@ -1,0 +1,13 @@
+RewriteEngine On
+
+
+# Redirect requests for the root directory to index.php
+RewriteRule ^$ index.php [L]
+
+DirectoryIndex index.php index.html
+
+
+# Redirect all other requests to the appropriate page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ page.php?page=$1 [L,QSA]
