@@ -3,7 +3,7 @@
 <head>
 	<title>User Authentication</title>
 	<link rel="stylesheet" type="text/css" href="../assets/style2.css">
-	<script src="../assets/script.js"></script>
+	<script src="../app/script.js"></script>
 </head>
 <body>
 	<h2>Login</h2>
